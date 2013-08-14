@@ -1,4 +1,7 @@
 # su daemon
+on boot
+    start su_daemon
+
 service su_daemon /system/xbin/su --daemon
     class main
     oneshot
